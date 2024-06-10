@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      DB_DATABASE: 'ipinfo.sqlite'
+      DB_SYNCHRONIZE: 'true'
+      DB_LOGGING: 'false'
+      IPWHOIS_API_KEY: 'https://ipwhois.app/json/'
+    command: npm start

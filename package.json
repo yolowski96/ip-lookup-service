@@ -1,0 +1,42 @@
+{
+  "name": "ip-lookup-api",
+  "version": "1.0.0",
+  "description": "A REST API for IP address lookup with caching using TypeScript, Express, and TypeORM",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --watch",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "author": "Goran Yolovski",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "axios": "^1.7.2",
+    "babel-jest": "^27.5.1",
+    "express": "^4.19.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typeorm": "0.3.11"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.7",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.6",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.5",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.9.5"
+  }
+}
