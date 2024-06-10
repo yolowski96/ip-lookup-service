@@ -26,6 +26,10 @@ The IP Lookup Service is a REST API that allows users to:
    ```bash
    npm install
    ```
+3. Build the service:
+   ```bash
+   npm run build
+   ``` 
 
 ## Running the Service
 
